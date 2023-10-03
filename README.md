@@ -856,20 +856,22 @@ I am myself learning 5 questions a day and will add those 5 questions a day in t
 161. ### What is a pure function?
 
      A pure function is a function that, given the same input, will always return the same output and does not have any observable side effect.
+     This means it doesn't modify any external state, variables, data structures, or perform any observable actions like writing to the console, modifying a global variable, or changing the value of a passed-in reference type. A counterexample would be a function where the same input values do not always produce the same output values. This usually happens when the function's result is influenced by external state or when it produces random values.
 
-162. ### What is the scope chain in JavaScript?
+
+163. ### What is the scope chain in JavaScript?
 
      The scope chain is how Javascript looks for variables. When looking for variables through the nested scope, the inner scope first looks at its own scope.
 
-163. ### What is a higher order function?
+164. ### What is a higher order function?
 
      A higher-order function is a function that takes one or more functions as arguments and/or returns a function as its result.
 
-164. ### What is hoisting?
+165. ### What is hoisting?
 
      Hoisting is a behavior in JavaScript where variable and function declarations are moved to the top of their respective scopes during compilation or interpretation, before the code is actually executed. This means that you can use a variable or function before it has been declared, but only if it is declared using the `var` or `function` keywords. However, only the declarations themselves are hoisted, not their values or assignments.
 
-165. ### What are modules in javascript?
+166. ### What are modules in javascript?
      Modules are a way of organizing code into separate files or components that can be reused in different parts of an application. Modules allow you to encapsulate data and functionality, making your code more organized and easier to maintain
 
 # Day 34
