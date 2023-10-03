@@ -818,15 +818,19 @@ I am myself learning 5 questions a day and will add those 5 questions a day in t
 
 # Day 32
 
-156. ### What is the purpose of the array slice method?
+157. ### What is the purpose of the array slice method?
 
-     The `slice()` method returns the selected elements in an array as a new array object. It selects the elements starting at the given start argument, and ends at the given optional end argument without including the last element.
+     The slice() method of the Array object is used to extract a section of an array and return it as a new array, without modifying the original array. It's a method to create shallow copies or subsets of arrays.
+      let arr = [1, 2, 3, 4, 5];
+      let subset = arr.slice(1, 4);
+      console.log(subset);  // Outputs: [2, 3, 4]
 
-157. ### What is the purpose of the array splice method?
+
+158. ### What is the purpose of the array splice method?
 
      The `splice()` is an array method in JavaScript that allows you to modify an array by adding, removing, or replacing elements. It takes two required parameters: the index at which to start making changes to the array, and the number of elements to remove. It also has an optional parameter for adding one or more elements to the array.
 
-158. ### What is the difference between slice and splice?
+159. ### What is the difference between slice and splice?
 
      | slice                                        |                     splice                      |
      | -------------------------------------------- | :---------------------------------------------: |
@@ -834,11 +838,11 @@ I am myself learning 5 questions a day and will add those 5 questions a day in t
      | Returns the subset of original array         |      Returns the deleted elements as array      |
      | Used to pick the elements from array         | Used to insert or delete elements to/from array |
 
-159. ### What are arrow function?
+160. ### What are arrow function?
 
      Arrow functions are a shorthand syntax for writing function expressions in JavaScript. They use the `=>` syntax to separate the function parameters from the function body and have a concise syntax that makes them ideal for writing short, one-liner functions.
 
-160. ### What are first class function?
+161. ### What are first class function?
      First-class functions means when functions in that language are treated like any other variable. This means that functions can be assigned to variables, passed as arguments to other functions, and returned from functions.
 
 # Day 33
