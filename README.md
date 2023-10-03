@@ -861,7 +861,7 @@ I am myself learning 5 questions a day and will add those 5 questions a day in t
 
 163. ### What is the scope chain in JavaScript?
 
-     The scope chain is how Javascript looks for variables. When looking for variables through the nested scope, the inner scope first looks at its own scope.
+     The scope chain is how Javascript looks for variables. When looking for variables through the nested scope, the inner scope first looks at its own scope. Block -> Function -> Global. Inner -> Outer
 
 164. ### What is a higher order function?
 
