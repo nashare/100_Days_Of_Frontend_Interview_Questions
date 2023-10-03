@@ -843,7 +843,13 @@ I am myself learning 5 questions a day and will add those 5 questions a day in t
      Arrow functions are a shorthand syntax for writing function expressions in JavaScript. They use the `=>` syntax to separate the function parameters from the function body and have a concise syntax that makes them ideal for writing short, one-liner functions.
 
 161. ### What are first class function?
-     First-class functions means when functions in that language are treated like any other variable. This means that functions can be assigned to variables, passed as arguments to other functions, and returned from functions.
+     First-class functions means when functions in that language are treated like any other variable. This means that functions can be assigned to variables, passed as arguments to other functions, and returned from functions.In programming languages, when functions are treated as first-class citizens (or first-class objects), it means that functions can be:
+      Passed as arguments to other functions.
+      Returned as values from other functions.
+      Assigned to variables.
+      Stored in data structures like arrays, objects, etc.
+      Have their own properties and methods just like any other object.
+   JavaScript is a language that treats functions as first-class citizens. 
 
 # Day 33
 
