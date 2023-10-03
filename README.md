@@ -798,19 +798,23 @@ I am myself learning 5 questions a day and will add those 5 questions a day in t
      JavaScript is a programming language used to create interactive and dynamic web pages, as well as to create more complex applications on the client and server side.
 
 152. ### What is the difference between null and undefined in JavaScript?
+     They are different data types in JavaScript. Undefined is undefined and null is an object. They are losely equal. A variable that has been declared but has not been assigned a value is of type undefined. Null represents a deliberate assignment of "no value" or "empty value" to a variable. 
 
      Null represents a deliberate non-value or absence of any object value, while undefined represents a lack of value or an uninitialized variable.
 
-153. ### What is the difference between == and === in JavaScript?
+154. ### What is the difference between == and === in JavaScript?
 
      The double equals (==) compares the value of two variables, while the triple equals (===) compares both the value and the data type of two variables.
 
-154. ### What is the difference between let, const, and var in JavaScript?
+155. ### What is the difference between let, const, and var in JavaScript?
 
      The var keyword is used for variable declaration in older versions of JavaScript, while let and const were introduced in ES6. Var has a function-level scope, while let and const have block-level scope. Additionally, const variables cannot be reassigned after being declared, while let variables can be.
 
-155. ### How do you convert a string to a number in JavaScript?
-     You can use the `Number()` or `parseFloat()` functions to convert a string to a number in JavaScript.
+156. ### How do you convert a string to a number in JavaScript?
+     Using the Unary + Operator.
+     The Number() function can be used to convert strings to numbers.
+     The parseInt() function parses a string and returns an integer.
+     The parseFloat() function parses a string and returns a floating point number.
 
 # Day 32
 
