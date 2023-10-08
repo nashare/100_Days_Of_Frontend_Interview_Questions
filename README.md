@@ -971,12 +971,19 @@ I am myself learning 5 questions a day and will add those 5 questions a day in t
 183. ### What is the difference between the DOMContentLoaded event and the load event?
 
      The DOMContentLoaded event is fired when the initial HTML document has been completely loaded and parsed, while the load event is fired when all resources on the page, including images and scripts, have finished loading.
+     Key Differences:
+      Trigger Point:
+         DOMContentLoaded: Fires when the initial HTML is fully loaded and parsed.
+         load: Fires when the whole page and all its dependent resources are fully loaded.
+      Object It's Fired On:
+         DOMContentLoaded: Typically fired on the document object.
+         load: Fired on the window object.
 
-184. ### What is the difference between innerHTML and innerText?
+185. ### What is the difference between innerHTML and innerText?
 
      The main difference between `innerText` and `innerHTML` in the DOM is that `innerText` returns only the visible text content of an element, excluding any HTML tags, while `innerHTML` returns the complete HTML content of an element, including any nested elements and tags.
 
-185. ### What is the role of the Window object in the DOM?
+186. ### What is the role of the Window object in the DOM?
      The Window object in the DOM represents the browser window or tab that displays the web page. It provides methods and properties for controlling and manipulating the browser window.
 
 # Day 38
