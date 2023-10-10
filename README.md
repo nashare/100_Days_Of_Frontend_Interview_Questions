@@ -1012,20 +1012,30 @@ I am myself learning 5 questions a day and will add those 5 questions a day in t
 191. ### What is BOM?
 
      BOM stands for Browser Object Model. It is a set of APIs provided by the browser that allow JavaScript to interact with the browser window.
+The Browser Object Model (BOM) is a representation of the browser window and the elements and objects within it. It provides a way for JavaScript to interact with the browser itself, as opposed to the content loaded within it. While the Document Object Model (DOM) allows you to manipulate the content of a webpage (i.e., its HTML and CSS), the BOM allows you to manipulate the browser window and other browser-related objects.
+      
+      Here are some primary features and capabilities of the BOM:
+      
+      Window Object: This is the central component of the BOM and represents the browser's window or tab. All global JavaScript objects, functions, and variables automatically become members of the window object.
+      Navigator Object: Contains information about the browser, such as its name, version, and enabled features.
+      Location Object: Represents the current URL of the browser and can be used to redirect the user to a different page.
+      Screen Object: Provides details about the user's screen, such as its width, height, color depth, and so on.
+      History Object: Allows you to manipulate the browser's session history. You can move forward or backward through the user's history.
+      Cookies: Through the document.cookie property, you can create, read, and delete browser cookies.
 
-192. ### What is the use of `setTimeOut()` in javascript?
+193. ### What is the use of `setTimeOut()` in javascript?
 
      `setTimeout()` is a built-in function in JavaScript that allows you to schedule a function to be executed after a specified amount of time has elapsed.
 
-193. ### What is the use of `setInterval()` in javascript?
+194. ### What is the use of `setInterval()` in javascript?
 
      `setInterval()` is a function in JavaScript that allows you to repeatedly execute a given function at a specified interval. It works by calling the function repeatedly with a specified time delay between each call, until the interval is cancelled.
 
-194. ### What is the purpose of clearTimeout method and clearInterval?
+195. ### What is the purpose of clearTimeout method and clearInterval?
 
      The clearTimeout method is a built-in function in JavaScript that is used to cancel a timer created by the setTimeout function and clearInterval method is a built-in function in JavaScript that is used to cancel a recurring timer created by the setInterval function.
 
-195. ### How do you redirect new page in javascript?
+196. ### How do you redirect new page in javascript?
 
      To redirect to a new page using JavaScript, you can use the `window.location` object's `assign` or `replace` methods.
      Example:
@@ -1037,6 +1047,7 @@ I am myself learning 5 questions a day and will add those 5 questions a day in t
      // Redirect to a new page and replace the current page in the browser history
      window.location.replace("https://www.example.com");
      ```
+     Usually, just setting window.location.href is sufficient for most redirection needs. However, if you specifically want to prevent the user from going back to the original page using the "back" button, then window.location.replace() is the more appropriate choice.
 
 # Day 40
 
