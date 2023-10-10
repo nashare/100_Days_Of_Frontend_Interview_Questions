@@ -1085,7 +1085,8 @@ The Browser Object Model (BOM) is a representation of the browser window and the
      ```
 
 200. ### What is a JSON?
-     JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax. It is commonly used for transmitting data in web applications .
+     JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax. It is commonly used for transmitting data in web applications.
+     While JSON resembles JavaScript object literal notation, they aren't the same. For example, JSON keys must be wrapped in double quotes, while JavaScript object keys do not need to be quoted if they are valid identifiers. Additionally, JSON doesn't support functions, Date objects, or other non-primitive types directly.
 
 # Day 41
 
