@@ -1083,6 +1083,41 @@ The Browser Object Model (BOM) is a representation of the browser window and the
      // 4
      const copy4 = structuredClone(data)
      ```
+        1. Shallow Clone
+   A shallow clone only copies the top-level properties of an object. If the original object has nested objects or arrays, the clone and the original will still reference the same nested objects or arrays.
+   
+   1.1. Using Object.assign():
+   
+   javascript
+   Copy code
+   const original = { a: 1, b: { c: 2 } };
+   const clone = Object.assign({}, original);
+   1.2. Using the Spread Operator:
+   
+   javascript
+   Copy code
+   const original = { a: 1, b: { c: 2 } };
+   const clone = { ...original };
+   2. Deep Clone
+   A deep clone creates a copy of the original object along with all the nested objects or arrays.
+   
+   2.1. Using JSON:
+   
+   This method serializes the object to a JSON string and then parses it back to a new object. It's a quick way to deep clone but has limitations: it doesn't handle functions, undefined, special objects (like RegExp or Map), or circular references.
+   
+   javascript
+   Copy code
+   const original = { a: 1, b: { c: 2 } };
+   const clone = JSON.parse(JSON.stringify(original));
+   2.2. Using a Library:
+   
+   Libraries like Lodash provide deep clone utilities that handle more edge cases than the JSON method.
+   
+   javascript
+   Copy code
+   const lodash = require('lodash');
+   const original = { a: 1, b: { c: 2 } };
+   const clone = lodash.cloneDeep(original);
 
 200. ### What is a JSON?
      JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax. It is commonly used for transmitting data in web applications.
